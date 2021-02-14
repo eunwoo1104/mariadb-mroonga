@@ -4,10 +4,10 @@ FROM mariadb/server:10.5
 # Install Mroonga
 RUN apt -y update
 RUN apt -y install mariadb-plugin-mroonga
+RUN echo "INSTALL SONAME 'ha_mroonga';" > mroonga.sql
 
 # Start Mysql
-RUN /etc/init.d/mariadb start
+CMD /etc/init.d/mariadb start
 
 # Setup
-RUN echo "INSTALL SONAME 'ha_mroonga';" > mroonga.sql
-RUN mysql < mroonga.sql
+CMD mysql < mroonga.sql
