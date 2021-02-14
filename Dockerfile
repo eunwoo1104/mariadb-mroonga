@@ -6,7 +6,7 @@ RUN apt -y update
 RUN apt -y install mariadb-plugin-mroonga
 
 # Start Mysql
-/etc/init.d/mysql start
+/etc/init.d/mariadb start
 
 # Setup
 RUN echo "INSTALL SONAME 'ha_mroonga';" > mroonga.sql
