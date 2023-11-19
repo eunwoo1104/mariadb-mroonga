@@ -1,5 +1,5 @@
 # Base Image
-FROM mariadb:10.5
+FROM mariadb:10.5.23
 
 # Install Mroonga
 RUN apt -y update
