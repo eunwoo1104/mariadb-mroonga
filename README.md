@@ -2,4 +2,6 @@
 
 Mariadb mroonga plugin docker image
 
-[Docker Hub](https://hub.docker.com/r/wonderlandpark/mariadb-mroonga)
+```
+docker pull ghcr.io/eunwoo1104/mariadb-mroonga:latest
+```
